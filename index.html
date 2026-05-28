@@ -5,153 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>T's Portfolio 💼</title>
   <style>
-    :root {
-      --bg: #fff;
-      --text: #333;
-      --primary: #4a90e2;
-    }
-    [data-theme="dark"] {
-      --bg: #1e1e1e;
-      --text: #f0f0f0;
-      --primary: #90caf9;
-    }
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      font-family: system-ui, sans-serif;
+      background: #fff;
+      color: #333;
       line-height: 1.6;
       padding: 2rem;
-      transition: background 0.3s, color 0.3s;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      margin-right: 1rem;
-    }
-    nav a:hover {
-      color: var(--primary);
-    }
-    .theme-toggle {
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
     }
     header {
-      text-align: center;
-      padding: 2rem 0;
+      margin-bottom: 2rem;
     }
     header h1 {
-      font-size: 3rem;
-      color: var(--primary);
-    }
-    section {
-      margin: 2rem 0;
-    }
-    h2 {
-      color: var(--primary);
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
-    .project {
+    section {
       margin-bottom: 1.5rem;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 16px;
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      border-radius: 5px;
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #4a90e2;
       text-decoration: none;
-      transition: background 0.3s;
     }
-    .btn:hover {
-      background: #357ab8;
+    a:hover {
+      text-decoration: underline;
     }
-    iframe {
-      margin-top: 1rem;
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      border: none;
+    .project {
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-left: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
-  </nav>
-
   <header>
-    <h1>Heya, I'm T 👋</h1>
-    <p>A 16 y/o I.T. student who codes, speaks 10+ languages & vibes with tech 🌐💻✨</p>
+    <h1>Hi, I'm T 👋</h1>
+    <p>I.T. student who codes & speaks 10+ languages</p>
   </header>
 
-  <section id="skills">
-    <h2>🛠️ Skills</h2>
+  <section>
+    <h2>Skills</h2>
     <ul>
-      <li>💻 HTML, CSS, JavaScript, Python, C</li>
-      <li>🌐 Git & GitHub</li>
-      <li>🧠 Problem Solving & Debugging</li>
-      <li>🗣️ Multilingual Communication</li>
+      <li>HTML, CSS, JavaScript, Python, C</li>
+      <li>Git & GitHub</li>
+      <li>Problem Solving</li>
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>📂 Projects</h2>
+  <section>
+    <h2>Projects</h2>
     <div class="project">
-      <h3>Simple Calculator</h3>
-      <p>A basic calculator app made with HTML, CSS & JS</p>
-      <a href="https://github.com/teephopdisawas/calculator" class="btn" target="_blank">View Project</a>
+      <p><a href="https://github.com/teephopdisawas/calculator" target="_blank">Calculator</a></p>
     </div>
     <div class="project">
-      <h3>Weather App</h3>
-      <p>Shows real-time weather using an API. Looks sleek too 🌤️</p>
-      <a href="https://github.com/teephopdisawas/weather-app" class="btn" target="_blank">View Project</a>
-    </div>
-    <div class="project">
-      <h3>🔗 Embedded TikTok</h3>
-      <iframe src="https://www.tiktok.com/embed/7367072440395363590" allowfullscreen></iframe>
-    </div>
-    <div class="project">
-      <h3>📺 Embedded YouTube</h3>
-      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <p><a href="https://github.com/teephopdisawas/weather-app" target="_blank">Weather App</a></p>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>📞 Contact</h2>
-    <p>Wanna collab or chat? Hit me up on <a href="https://github.com/teephopdisawas" target="_blank">GitHub</a> ✨</p>
+  <section>
+    <h2>Contact</h2>
+    <p><a href="https://github.com/teephopdisawas" target="_blank">GitHub</a></p>
   </section>
-
-  <script>
-    function toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      if (currentTheme === 'dark') {
-        document.documentElement.removeAttribute('data-theme');
-      } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-      }
-    }
-  </script>
 </body>
 </html>
